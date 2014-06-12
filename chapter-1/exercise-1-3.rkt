@@ -17,4 +17,12 @@
            x
            z))))
 
-(define (tbss-2 x y z) 2)
+(define (tbss-2 x y z)
+  (define (sqr a)
+    (* a a))
+  (-
+   (+
+    (sqr x)
+    (sqr y)
+    (sqr z))
+   (sqr (min x y z))))
